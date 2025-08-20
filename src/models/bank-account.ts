@@ -16,4 +16,19 @@ export default class BankAccount{
     getId(){
         return this.id  
     }
+
+    getBalance(){
+        return this.balance
+    }
+
+    deductBalance(amount:number){
+        console.log(this,this.balance,"before")
+        this.balance -= amount
+        console.log(this,this.balance,"after")
+    }
+
+    addBalance(amount:number){
+        this.balance += amount  
+    }
+
 }
